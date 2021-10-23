@@ -91,6 +91,10 @@ ul {
   justify-content: center;
 }
 
+.socialMedia:hover {
+  transform: translateY(-5px);
+}
+
 @media (min-width: 551px) {
   body {
     background: url(images/Desktop.png) no-repeat top;
