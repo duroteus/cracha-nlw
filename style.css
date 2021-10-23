@@ -18,9 +18,10 @@ body {
 }
 
 main {
-  background: url(images/background.svg);
-  width: 375px;
-  height: 812px;
+  background: url(images/background.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -88,4 +89,44 @@ ul {
   gap: 0.5rem;
 
   justify-content: center;
+}
+
+@media (min-width: 551px) {
+  body {
+    background: url(images/Desktop.png) no-repeat top;
+    background-color: black;
+  }
+
+  main {
+    width: 358px;
+    height: 540px;
+    min-height: 0px;
+  }
+  
+  .espaco {
+    position: absolute;
+    background: #121214;
+    z-index: 1;
+    width: 100px;
+    height: 12px;
+    margin-left: 8.3rem;
+    margin-top: 1.5rem;
+    border-radius: 1.5rem;
+  }
+  
+  .corda {
+    position: relative;
+    z-index: 2;
+    width: 80px;
+    height: 318px;
+    background: linear-gradient(161.24deg, #ff008e -15.25%, #ffcd1e 111.89%);
+    top: 0;
+    margin-top: -18rem;
+    margin-left: 8.9rem;
+    border-radius: 0 0 5px 5px;
+  }
+
+  .avatar {
+    margin: 1.5rem auto 0;
+  }
 }
